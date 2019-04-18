@@ -1,0 +1,33 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html,
+body {
+  background: rgb(26, 26, 26);
+}
+
+.containerWrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+#container {
+  cursor: pointer;
+  font-size: 0;
+  height: 700px;
+  line-height: 0;
+  margin: 50px 0;
+  width: 100%;
+}
+
+.colourScheme {
+  background: rgb(32, 32, 32);
+  background: rgb(107, 228, 212);
+}
