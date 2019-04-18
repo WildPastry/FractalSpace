@@ -1,1 +1,3 @@
-## Fractual Space
+## Fractal Space
+
+Lost in space and time...
