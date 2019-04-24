@@ -1,39 +1,39 @@
 /*jslint browser:true */
 // ↑↓:opacity / ←→:length / 0-9:depth / c:colour / f:fps / space:pause
-var colour;
-var frames;
-var depth;
-var tau;
-var offset;
+// var colour;
+// var frames;
+// var depth;
+// var tau;
+// var offset;
 
-$.ajax({
-  url: 'js/config.json',
-  dataType: 'json',
-  type: 'GET',
-  success: function(config) {
-    colour = config.COLOUR;
-    frames = config.FRAMES;
-    depth = config.DEPTH;
-    tau = config.TAU;
-    offset = config.OFFSET;
-    console.log('Config loaded...');
-    console.log(colour);
-    console.log(frames);
-    console.log(depth);
-    console.log(tau);
-    console.log(offset);
-  },
-  error: function(error) {
-    console.log(error);
-    console.log('Error loading config...');
-  }
-});
+// $.ajax({
+//   url: 'js/config.json',
+//   dataType: 'json',
+//   type: 'GET',
+//   success: function(config) {
+//     colour = config.COLOUR;
+//     frames = config.FRAMES;
+//     depth = config.DEPTH;
+//     tau = config.TAU;
+//     offset = config.OFFSET;
+//     console.log('Config loaded...');
+//     console.log(colour);
+//     console.log(frames);
+//     console.log(depth);
+//     console.log(tau);
+//     console.log(offset);
+//   },
+//   error: function(error) {
+//     console.log(error);
+//     console.log('Error loading config...');
+//   }
+// });
 
-let COLOUR_ADJUSTMENT = colour;
-const FRAMES_PER_SECOND = frames;
-const MAX_DEPTH = depth;
-const TAU = tau * Math.PI;
-const OFFSET = offset;
+let COLOUR_ADJUSTMENT = 0.8;
+const FRAMES_PER_SECOND = 24;
+const MAX_DEPTH = 32;
+const TAU = 2 * Math.PI;
+const OFFSET = 0;
 
 class Rotator {
   constructor(rotation = 0, scale = 1) {
