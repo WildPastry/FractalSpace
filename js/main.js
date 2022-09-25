@@ -1,34 +1,3 @@
-/*jslint browser:true */
-// ↑↓:opacity / ←→:length / 0-9:depth / c:colour / f:fps / space:pause
-// var colour;
-// var frames;
-// var depth;
-// var tau;
-// var offset;
-
-// $.ajax({
-//   url: 'js/config.json',
-//   dataType: 'json',
-//   type: 'GET',
-//   success: function(config) {
-//     colour = config.COLOUR;
-//     frames = config.FRAMES;
-//     depth = config.DEPTH;
-//     tau = config.TAU;
-//     offset = config.OFFSET;
-//     console.log('Config loaded...');
-//     console.log(colour);
-//     console.log(frames);
-//     console.log(depth);
-//     console.log(tau);
-//     console.log(offset);
-//   },
-//   error: function(error) {
-//     console.log(error);
-//     console.log('Error loading config...');
-//   }
-// });
-
 let COLOUR_ADJUSTMENT = 0.8;
 const FRAMES_PER_SECOND = 24;
 const MAX_DEPTH = 32;
